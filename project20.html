@@ -1,0 +1,36 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiplycation</title>
+    </head>
+    <body>
+        <h2>Multiplying Table of nine 9</h2>
+<button onclick="Multiply(9,1)">By 1</button>
+<button onclick="Multiply(9,2)">By 2</button>
+<button onclick="Multiply(9,3)">By 3</button>
+<button onclick="Multiply(9,4)">By 4</button>
+<button onclick="Multiply(9,5)">By 5</button>
+<button onclick="Multiply(9,6)">By 6</button>
+<button onclick="Multiply(9,7)">By 7</button>
+<button onclick="Multiply(9,8)">By 8</button>
+<button onclick="Multiply(9,9)">By 9</button>
+<button onclick="Multiply(9,10)">By 10</button>
+
+<p id="result"></p>   
+<script>
+function Multiply(a,b){
+    if (b == undefined){
+        alert("Please enter another number");
+      
+      
+    }
+ var result=a*b;
+ document.getElementById("result").innerHTML=result;
+}
+//Miss when (b) is not given it just says NaN istead of saying "Please enter another number" why is that?
+//I also tried assigning b as undefined but it still gives NaN
+</script>
+ </body>
+    </html>
